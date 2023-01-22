@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 
 export function generateRangeDatesFromYearStart() {
-  const startDate = dayjs().startOf("year");
+  const startDate = dayjs().utcOffset(0).startOf("year");
   const endDate = new Date();
 
   let dateRange = [];
