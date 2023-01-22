@@ -27,8 +27,6 @@ export function HabitDays({ date, amount = 0, completed = 0, ...rest }: Props) {
   const today = dayjs().utcOffset(0).startOf("day").toDate();
   const isCurrentDay = dayjs(date).isSame(today);
 
-  console.log(date);
-
   return (
     <TouchableOpacity
       className={clsx("m-1  border-2  rounded-lg", {
